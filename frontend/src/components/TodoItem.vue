@@ -2,18 +2,18 @@
   <li :class="['item', { done: todo.completed }]">
     <div class="row between">
       <label class="row">
-        <input 
+        <!-- <input 
           type="checkbox" 
           :checked="todo.completed"
           @change="$emit('toggle')"
-        />
+        /> -->
         <span class="id">#{{ todo.id }}</span>
       </label>
 
       <div class="row">
-        <span class="badge">
+        <!-- <span class="badge">
           {{ todo.completed ? 'erledigt' : 'offen' }}
-        </span>
+        </span> -->
         <button 
           class="btn danger" 
           type="button"
@@ -27,6 +27,7 @@
     <input
       v-model="localTitle"
       class="input"
+      readonly
       @input="dirty = true"
     />
 
@@ -34,18 +35,19 @@
       v-model="localDesc"
       class="textarea"
       rows="3"
+      readonly
       @input="dirty = true"
     />
 
     <div class="row">
-      <button 
+      <!-- <button 
         class="btn" 
         type="button"
         :disabled="!dirty"
         @click="save"
       >
         Speichern
-      </button>
+      </button> -->
     </div>
   </li>
 </template>

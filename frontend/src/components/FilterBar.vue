@@ -7,7 +7,7 @@
       placeholder="Suchen…"
     />
 
-    <select 
+    <!-- <select 
       :value="filter"
       @change="$emit('update:filter', $event.target.value)"
       class="select"
@@ -15,7 +15,7 @@
       <option value="all">Alle</option>
       <option value="open">Offen</option>
       <option value="done">Erledigt</option>
-    </select>
+    </select> -->
 
     <select 
       :value="sort"

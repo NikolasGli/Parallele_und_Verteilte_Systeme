@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="meta">
-      Offen: <b>{{ countOpen }}</b> / Gesamt: <b>{{ countTotal }}</b>
+      <!-- Offen: <b>{{ countOpen }}</b> / --> Gesamt: <b>{{ countTotal }}</b>
     </div>
   </header>
 </template>

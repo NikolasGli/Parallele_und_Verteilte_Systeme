@@ -9,7 +9,10 @@ const api = axios.create({
 
 export const todosApi = {
   async list() {
-    const { data } = await api.get('/')
+    // ÄNDERUNG: Leerer String statt '/'
+    // Vorher: await api.get('/')  -> Resultat: /todos/ (404)
+    // Jetzt:  await api.get('')   -> Resultat: /todos  (200 OK)
+    const { data } = await api.get('') 
     return data
   },
 
@@ -19,7 +22,8 @@ export const todosApi = {
   },
 
   async create(todo) {
-    const { data } = await api.post('/', todo)
+    // ÄNDERUNG: Leerer String statt '/'
+    const { data } = await api.post('', todo)
     return data
   },
 
