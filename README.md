@@ -5,6 +5,10 @@
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
 ![Vue.js](https://img.shields.io/badge/Vue.js-3.0-green)
 
+<video src="./video/dein-video-name.mp4" controls="controls" style="max-width: 100%;">
+  Dein Browser unterstützt das Video-Tag nicht.
+</video>
+
 Ein modernes, containerisiertes Frontend für die Verwaltung von Aufgaben (Todos). Entwickelt im Rahmen der Vorlesung **Parallele und Verteilte Systeme** (HS Esslingen, WS25/26).
 
 Dieses Projekt stellt die Benutzeroberfläche (UI) bereit, die mit einem vorgegebenen Spring Boot Backend kommuniziert.
