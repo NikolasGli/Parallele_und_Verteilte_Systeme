@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    extra_hosts:
+      # DAS IST DER TRICK:
+      # Wir mappen den Namen "backend-api" auf die IP deines Laptops ("host-gateway").
+      # So wird der Traffic aus dem Container raus an dein lokales Backend (localhost:8080) geleitet.
+      - "backend-api:host-gateway"

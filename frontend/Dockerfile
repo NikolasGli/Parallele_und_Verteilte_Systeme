@@ -14,7 +14,6 @@ FROM nginx:alpine
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Nginx Konfiguration für SPA
 RUN echo 'server { \
   listen 80; \
   location / { \
@@ -23,7 +22,7 @@ RUN echo 'server { \
     try_files $uri $uri/ /index.html; \
   } \
   location /todos { \
-    proxy_pass http://starterapp-nodeport:8080; \
+    proxy_pass http://backend-api:8080; \
     proxy_set_header Host $host; \
     proxy_set_header X-Real-IP $remote_addr; \
   } \
