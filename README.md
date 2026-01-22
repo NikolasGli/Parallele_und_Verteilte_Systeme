@@ -23,14 +23,4 @@ Dieses Projekt stellt die Benutzeroberfläche (UI) bereit, die mit einem vorgege
 
 ---
 
-## Architektur
 
-Das Frontend wird als **Single Page Application (SPA)** ausgeliefert.
-* Im **Entwicklungsmodus** (Lokal) nutzt es den Vite Dev Server.
-* Im **Produktionsmodus** (Docker) läuft es auf einem **Nginx Webserver**.
-
-```mermaid
-graph LR
-    User((User)) -- Port 80 --> Nginx[Frontend Container<br>Nginx]
-    Nginx -- /todos --> Backend[Backend Container<br>Spring Boot]
-    Nginx -- / --> VueApp[Vue.js Static Files]
