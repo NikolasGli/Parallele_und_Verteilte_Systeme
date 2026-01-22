@@ -21,6 +21,3 @@ Dieses Projekt stellt die Benutzeroberfläche (UI) bereit, die mit einem vorgege
 
 > **Hinweis:** Die Funktionen zum Bearbeiten und Status-Ändern sind im UI aktuell ausgeblendet.
 
----
-
-
